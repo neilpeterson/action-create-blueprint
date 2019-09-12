@@ -1,4 +1,4 @@
-# GitHub Actions for Azure Blueprints
+# GitHub Action: Create an Azure Blueprint
 
 GitHub Actions to create an Azure Blueprints. For more information on Azure Blueprints, see the [Azure Blueprints documentation](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview?WT.mc_id=blueprintsextension-github-nepeters).
 
