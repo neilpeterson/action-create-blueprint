@@ -1,4 +1,4 @@
-name: 'Azure Blueprints'
+name: 'Create Azure Blueprint'
 author: 'neilpeterson'
 description: 'Create and Assign Azure Blueprints'
 branding:
