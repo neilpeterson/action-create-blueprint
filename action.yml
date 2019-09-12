@@ -5,6 +5,10 @@ branding:
   icon: 'book-open'
   color: 'blue'
 inputs:
+  creationScope:
+    description: 'Azure Subscription ID'
+    required: false
+    default: ManagementGroup
   azureManagementGroupName:
     description: 'Azure Management Group Name'
     required: false
