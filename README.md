@@ -18,11 +18,11 @@ Next, create three GitHub secrets hold the service principal credentials.
 
 ```
 - name: Create Azure Blueprint
+  uses: neilpeterson/action-create-blueprint@master
   env:
     AZURETENANTID: ${{ secrets.AZURETENANTID }}
     AZURECLIENTID: ${{ secrets.AZURECLIENTID }}
     AZUREPASSWORD: ${{ secrets.AZUREPASSWORD }}
-  uses: neilpeterson/action-create-blueprint@master
   with:
     azureManagementGroupName: nepeters-internal
     blueprintName: actionBlueprintPublish
