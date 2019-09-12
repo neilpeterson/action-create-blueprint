@@ -5,7 +5,7 @@ branding:
   icon: 'book-open'
   color: 'blue'
 inputs:
-  creationScope:
+  scope:
     description: 'Azure Subscription ID'
     required: false
     default: ManagementGroup

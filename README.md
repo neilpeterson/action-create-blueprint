@@ -1,4 +1,4 @@
-# GitHub Action: Create an Azure Blueprint
+# GitHub Action: Create Azure Blueprints
 
 GitHub Actions to create an Azure Blueprints. For more information on Azure Blueprints, see the [Azure Blueprints documentation](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview?WT.mc_id=blueprintsextension-github-nepeters).
 
@@ -37,6 +37,7 @@ All configuration parameters:
 
 | Name | Description | Required |
 |:---|:---|---:|
+| scope | Creation scope for the blueprint. Valid values are `ManagamentGroup` and `Subscription`. Defaults to `ManagementGroup`. | false |
 | azureManagementGroupName | The Azure Management group at which the blueprint will be created. | false |
 | azureSubscriptionID | The Azure subscription at which the blueprint will be created. | false |
 | blueprintName | The blueprint name. | true |
