@@ -6,7 +6,7 @@ branding:
   color: 'blue'
 inputs:
   scope:
-    description: 'Azure Subscription ID'
+    description: 'Creation scope for the blueprint. Valid values are ManagamentGroup and Subscription'
     required: false
     default: ManagementGroup
   azureManagementGroupName:
