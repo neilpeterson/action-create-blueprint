@@ -1,0 +1,30 @@
+name: 'Azure Blueprints'
+author: 'neilpeterson'
+description: 'Create and Assign Azure Blueprints'
+branding:
+  icon: 'book-open'
+  color: 'blue'
+inputs:
+  azureManagementGroupName:
+    description: 'Azure Management Group Name'
+    required: false
+  azureSubscriptionID:
+    description: 'Azure Subscription ID'
+    required: false
+  blueprintName:
+    description: 'Blueprint name'
+    required: true
+  blueprintPath:
+    description: 'Path to a directory with a blueprint.json file and a directory named artifacts'
+    required: true
+  publishBlueprint:
+    description: 'Provide a value of true to publish the blueprint'
+    required: false
+    default: true
+  version:
+    description: 'Blueprint version. A value of Increment will increment the version number if the version is an integer'
+    required: false
+    default: Increment
+runs:
+  using: docker
+  image: neilpeterson/github-create-blueprint:0.1
