@@ -24,8 +24,19 @@ $PublishBlueprint = $Env:INPUT_PUBLISHBLUEPRINT
 $BlueprintVersion = $Env:INPUT_VERSION
 
 # Install Azure PowerShell modules
-Find-Module Az.Accounts | Install-Module -Force
-Find-Module Az.Blueprint | Install-Module -RequiredVersion 0.2.5 -Force
+if (Get-Module -ListAvailable -Name Az.Accounts) {
+   Write-Output "Az.Accounts module is allready installed."
+}
+else {
+   Find-Module Az.Accounts | Install-Module -Force
+}
+
+if (Get-Module -ListAvailable -Name Az.Blueprint) {
+   Write-Output "Az.Blueprint module is allready installed."
+}
+else {
+   Find-Module Az.Blueprint | Install-Module -RequiredVersion 0.2.5 -Force
+}
 
 # Set Blueprint Scope (Subscription / Management Group)
 if ($CreationScope -eq 'Subscription') {
