@@ -31,4 +31,5 @@ inputs:
     default: Increment
 runs:
   using: docker
-  image: neilpeterson/github-create-blueprint:0.1
+  # image: neilpeterson/github-create-blueprint:0.1
+  image: /Dockerfile
